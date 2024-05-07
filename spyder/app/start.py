@@ -13,7 +13,8 @@ import sys
 if os.environ.get('PYTHONPATH'):
     for path in os.environ['PYTHONPATH'].split(os.pathsep):
         try:
-            sys.path.remove(path.rstrip(os.sep))
+            # sys.path.remove(path.rstrip(os.sep))
+            print(path)
         except ValueError:
             pass
 
